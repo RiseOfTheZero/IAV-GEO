@@ -1,0 +1,458 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <!-- basic -->
+      <title>IAV GEOPORTAIL </title>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.css">
+      <link rel="stylesheet" href="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.css" />
+      <style>
+          #map {
+            
+
+              height: 75vh;
+              width: 90vw;
+              
+          }
+      </style>
+      <style>
+         .center {
+           text-align: center;
+           color: white;
+         }
+         </style>
+
+      <style>
+         .tt {
+           text-align: center;
+           color: white;
+         }
+         </style>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <!-- mobile metas -->
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="viewport" content="initial-scale=1, maximum-scale=1">
+      <!-- site metas -->
+      <title>EL IMAMI AYOUB</title>
+      <meta name="keywords" content="">
+      <meta name="description" content="">
+      <meta name="author" content="">
+      <!-- bootstrap css -->
+      <link rel="stylesheet" href="css/bootstrap.min.css">
+      <!-- style css -->
+      <link rel="stylesheet" href="css/style.css">
+      <!-- Responsive-->
+      <link rel="stylesheet" href="css/responsive.css">
+      <!-- fevicon -->
+      <link rel="icon" href="images/fevicon.png" type="image/gif" />
+      <!-- Scrollbar Custom CSS -->
+      <link rel="stylesheet" href="css/jquery.mCustomScrollbar.min.css">
+      <!-- Tweaks for older IEs-->
+      <link rel="stylesheet" href="https://netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css">
+      <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
+      <!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+   </head>
+   <!-- body -->
+   <body class="main-layout">
+      <!-- loader  -->
+      <div class="loader_bg">
+         <div class="loader"><img src="images/loading.gif" alt="#" /></div>
+      </div>
+      <!-- end loader -->
+      <div class="wrapper">
+         <!-- end loader -->
+
+         <div id="content">
+            <!-- header -->
+            <header>
+               <!-- header inner -->
+
+               <div class="header_full_banner">
+                  <div class="header">
+                     <div class="container">
+                        <div class="row">
+                           <div class="col-xl-12 col-lg-12 col-md-12 col-sm-12 col logo_section">
+                              <div class="full">
+                                 <div class="center-desk">
+                                    <div>
+                                       <h1 class="center">EL IMAMI AYOUB</h1>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                           <div class="col-xl-9 col-lg-9 col-md-9 col-sm-9">
+                              <ul class="btn">
+
+                  
+                              </ul>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+                  <!-- end header inner -->
+                  <!-- end header -->
+                  <!-- banner -->
+                  <section class="banner_main">
+                     <div class="container">
+                        <div class="row d_flex">
+                           <div class="col-md-126">
+                              <div class="text-bg">
+                                 <h1>IAV GEOPORTAIL</h1>
+                                 <span><h2 class= "tt"><b>L’Institut agronomique et vétérinaire Hassan-II (en arabe : معهد الحسن الثاني للزراعة والبيطرة), abrégé en IAV Hassan-II voire IAV, est une école d'ingénieurs et de médecins vétérinaires marocaine située à Rabat et créée en 1966.
+
+                                    L'école est chargée d'assurer la formation d'ingénieurs dans le domaine des sciences de la nature et de l'animal et de médecins vétérinaires.</b></h2></span>
+                                 <a href="https://iav.ac.ma/">Plus d'infos</a>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </section>
+               </div>
+            </header>
+            <!-- end banner -->
+            <!-- classified  section -->
+            <div class="classified ">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="titlepage">
+                           <h2>Les Options <span class="blu"> Disponible</span></h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="row">
+                           <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12">
+                              <div class="classified_box">
+                                 <span>0<strong class="blu2">1</strong>.</span>
+                              </div>
+                           </div>
+                           <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12">
+                              <div class="classified_box">
+                                 <div class="fornt">
+                                    <h3> Advanced Drawing</h3>
+                                    <p>Vous pouvez dessinez ce que vous voulez, lignes et avoir la longueur, polygon et avoir la surface, dessiner rectangle et cercle ainsi que posez des Markers</p>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <div class="row">
+                              <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12">
+                                 <div class="classified_box">
+                                    <span>0<strong class="blu2">2</strong>.</span>
+                                 </div>
+                              </div>
+                              <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12">
+                                 <div class="classified_box">
+                                    <div class="fornt">
+                                       <h3>Changer Entre BaseMaps</h3>
+                                       <p>Changer entre 2 Basemaps différents : une de OpenStreetMaps et l'autre pour Google Earth Satellite pour une dualité d'utilisation </p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                        <div class="col-md-12">
+                           <div class="row">
+                              <div class="col-xl-2 col-lg-2 col-md-2 col-sm-12">
+                                 <div class="classified_box">
+                                    <span>0<strong class="blu2">3</strong>.</span>
+                                 </div>
+                              </div>
+                              <div class="col-xl-10 col-lg-10 col-md-10 col-sm-12">
+                                 <div class="classified_box">
+                                    <div class="fornt">
+                                       <h3>Recherche et PinPoint</h3>
+                                       <p>Vous disposer d'une search bar qui vous permet de chercher n'importe quelle donnée et avoir un Marker sur la localisation de votre choix</p>
+                                    </div>
+                                 </div>
+                              </div>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end classified  section -->
+            <!-- about -->
+            <div id="about"  class="about">
+               <div class="container-fluid">
+                  <div class="row d_flex">
+                     <div class="center">
+                        
+                           <div id="map"></div>
+
+                           <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+                           <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet.draw/1.0.4/leaflet.draw.js"></script>
+                           <script src="https://unpkg.com/leaflet-control-geocoder/dist/Control.Geocoder.js"></script>
+                       
+                           <script>
+                               var map = L.map('map').setView([33.977678, -6.865400], 15);
+                               var osmLayer = L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+                                   attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
+                               });
+                       
+                               var googleSatelliteLayer = L.tileLayer('https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}', {
+                                   maxZoom: 20,
+                                   attribution: 'Google Satellite'
+                               });
+                       
+                               var basemaps = {
+                                   "OpenStreetMap": osmLayer,
+                                   "Google Satellite": googleSatelliteLayer
+                               };
+                       
+                               osmLayer.addTo(map);
+                       
+                               var drawnItems = new L.FeatureGroup();
+                               map.addLayer(drawnItems);
+                       
+                               var drawControl = new L.Control.Draw({
+                                   draw: {
+                                       polygon: {
+                                           allowIntersection: false,
+                                           showArea: true
+                                       },
+                                       polyline: {
+                                           showLength: true
+                                       },
+                                       rectangle: true,
+                                       circle: {
+                                           showRadius: true
+                                       },
+                                       marker: true
+                                   },
+                                   edit: {
+                                       featureGroup: drawnItems
+                                   }
+                               });
+                               map.addControl(drawControl);
+                       
+                               L.control.layers(basemaps, null, { collapsed: false }).addTo(map);
+                       
+                               // Add the Geocoder control to the map
+                               L.Control.geocoder().addTo(map);
+                       
+                               map.on('draw:created', function (e) {
+                                   var layer = e.layer;
+                                   drawnItems.addLayer(layer);
+                       
+                                   var popupContent;
+                       
+                                   if (layer instanceof L.Polygon) {
+                                       popupContent = createPolygonPopupContent(layer);
+                                   } else if (layer instanceof L.Polyline) {
+                                       popupContent = createPolylinePopupContent(layer);
+                                   } else if (layer instanceof L.Circle) {
+                                       popupContent = createCirclePopupContent(layer);
+                                   } else if (layer instanceof L.Marker) {
+                                       popupContent = createMarkerPopupContent(layer);
+                                   } else if (layer instanceof L.Rectangle) {
+                                       popupContent = createPolygonPopupContent(layer);
+                                   }
+                       
+                                   layer.bindPopup(popupContent, {
+                                       minWidth: 200
+                                   });
+                       
+                                   layer.on('popupopen', function () {
+                                       var nameSpan = document.querySelector('.leaflet-popup-content span');
+                                       nameSpan.addEventListener('input', function () {
+                                           layer.setPopupContent(updatePopupContent(layer, nameSpan.textContent));
+                                       });
+                                   });
+                               });
+                       
+                               function createPolygonPopupContent(layer, customName) {
+                                   var area;
+                                   if (layer instanceof L.Rectangle) {
+                                       area = L.GeometryUtil.geodesicArea([
+                                           layer.getBounds().getNorthWest(),
+                                           layer.getBounds().getNorthEast(),
+                                           layer.getBounds().getSouthEast(),
+                                           layer.getBounds().getSouthWest()
+                                       ]);
+                                   } else {
+                                       area = L.GeometryUtil.geodesicArea(layer.getLatLngs());
+                                   }
+                       
+                                   var areaInSqMeters = area.toFixed(2) + " sq meters";
+                                   var name = customName || "Your Name";
+                       
+                                   return `<div><b>Name:</b> <span contenteditable='true'>${name}</span><br><b>Area:</b> ${areaInSqMeters}</div>`;
+                               }
+                       
+                               function createPolylinePopupContent(layer, customName) {
+                                   var length = L.GeometryUtil.length(layer);
+                                   var lengthInMeters = length.toFixed(2) + " meters";
+                                   var name = customName || "Your Name";
+                       
+                                   return `<div><b>Name:</b> <span contenteditable='true'>${name}</span><br><b>Length:</b> ${lengthInMeters}</div>`;
+                               }
+                       
+                               function createCirclePopupContent(layer, customName) {
+                                   var radius = layer.getRadius();
+                                   var area = Math.PI * Math.pow(radius, 2);
+                                   var areaInSqMeters = area.toFixed(2) + " sq meters";
+                                   var name = customName || "Your Name";
+                       
+                                   return `<div><b>Name:</b> <span contenteditable='true'>${name}</span><br><b>Area:</b> ${areaInSqMeters}</div>`;
+                               }
+                       
+                               function createMarkerPopupContent(layer, customName) {
+                                   var name = customName || "Your Name";
+                       
+                                   return `<div><b>Name:</b> <span contenteditable='true'>${name}</span></div>`;
+                               }
+                       
+                               function updatePopupContent(layer, customName) {
+                                   if (layer instanceof L.Polygon || layer instanceof L.Rectangle) {
+                                       return createPolygonPopupContent(layer, customName);
+                                   } else if (layer instanceof L.Polyline) {
+                                       return createPolylinePopupContent(layer, customName);
+                                   } else if (layer instanceof L.Circle) {
+                                       return createCirclePopupContent(layer, customName);
+                                   } else if (layer instanceof L.Marker) {
+                                       return createMarkerPopupContent(layer, customName);
+                                   }
+                               }
+                       
+                               var marker = L.marker([33.97652670043104, -6.866839613600821]).addTo(map);
+                               marker.bindPopup("<b>TOPO</b>").openPopup();
+                       
+                               var marker2 = L.marker([33.97569495145634, -6.865336326747282]).addTo(map);
+                               marker2.bindPopup("<b>IAA</b>").openPopup();
+                       
+                               var marker3 = L.marker([33.97543103775692, -6.867465811898077]).addTo(map);
+                               marker3.bindPopup("<b>VETO</b>").openPopup();
+                       
+                               var marker4 = L.marker([33.978972824225814, -6.86423329231435]).addTo(map);
+                               marker4.bindPopup("<b>GR</b>").openPopup();
+                               var polygonCoordinates = [
+                                   [33.981696, -6.863958],
+                                   [33.974623, -6.870725],
+                                   [33.972996, -6.870735],
+                                   [33.970066, -6.866378],
+                                   [33.973171, -6.864752],
+                                   [33.980131, -6.858208],
+                                   [33.980889, -6.862785]
+                               ];
+                               var polygon = L.polygon(polygonCoordinates, { color: 'blue' }).addTo(map);
+                               polygon.bindPopup("IAV Limits");
+                       
+                               var circle1 = L.circle([33.97652670043104, -6.866839613600821], {
+                                   color: 'red',
+                                   fillColor: '#f03',
+                                   fillOpacity: 0.5,
+                                   radius: 50
+                               }).addTo(map);
+                               circle1.bindPopup("TOPO");
+                       
+                               var circle2 = L.circle([33.97569495145634, -6.865336326747282], {
+                                   color: 'red',
+                                   fillColor: '#f03',
+                                   fillOpacity: 0.5,
+                                   radius: 50
+                               }).addTo(map);
+                               circle2.bindPopup("IAA");
+                       
+                               var circle3 = L.circle([33.97543103775692, -6.867465811898077], {
+                                   color: 'red',
+                                   fillColor: '#f03',
+                                   fillOpacity: 0.5,
+                                   radius: 50
+                               }).addTo(map);
+                               circle3.bindPopup("VETO");
+                       
+                               var circle4 = L.circle([33.978972824225814, -6.86423329231435], {
+                                   color: 'red',
+                                   fillColor: '#f03',
+                                   fillOpacity: 0.5,
+                                   radius: 50
+                               }).addTo(map);
+                               circle4.bindPopup("GR");
+                           </script>
+                        
+
+                     </div>
+                  </div>
+               </div>
+            </div>
+            <!-- end about -->
+
+            <!-- classified  section -->
+            <div class="classified ">
+               <div class="container">
+                  <div class="row">
+                     <div class="col-md-12">
+                        <div class="titlepage">
+                           <h2>Thanks for <span class="blu"> Visiting</span>
+                           <br>EL IMAMI AYOUB </br></h2>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               
+            </div>
+            <!-- end classified  section -->
+         </div>
+      
+      </div>
+      <div class="overlay"></div>
+      <!-- Javascript files-->
+      <script src="js/jquery.min.js"></script>
+      <script src="js/popper.min.js"></script>
+      <script src="js/bootstrap.bundle.min.js"></script>
+      <script src="js/jquery-3.0.0.min.js"></script>
+      <!-- sidebar -->
+      <script src="js/jquery.mCustomScrollbar.concat.min.js"></script>
+      <script src="js/custom.js"></script>
+      <script type="text/javascript">
+         $(document).ready(function() {
+             $("#sidebar").mCustomScrollbar({
+                 theme: "minimal"
+             });
+         
+             $('#dismiss, .overlay').on('click', function() {
+                 $('#sidebar').removeClass('active');
+                 $('.overlay').removeClass('active');
+             });
+         
+             $('#sidebarCollapse').on('click', function() {
+                 $('#sidebar').addClass('active');
+                 $('.overlay').addClass('active');
+                 $('.collapse.in').toggleClass('in');
+                 $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+             });
+         });
+      </script>
+      <script>
+         $(document).ready(function() {
+             $(".fancybox").fancybox({
+                 openEffect: "none",
+                 closeEffect: "none"
+             });
+         
+             $(".zoom").hover(function() {
+         
+                 $(this).addClass('transition');
+             }, function() {
+         
+                 $(this).removeClass('transition');
+             });
+         });
+      </script>
+   </body>
+</html>
+
